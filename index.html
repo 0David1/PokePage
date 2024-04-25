@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" focusable="true" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <circle cx="9" cy="9" r="9" transform="translate(3 3)" /> <circle cx="12" cy="12" r="3" /> <path d="M3 12h6m6 0h6" /> </svg>
+                <span>PokeDex</span>
+            </a>
+            <ul class="navList">
+                <li class="navListItem">
+                    <a class="navLink" href="#tendencias">Tendencias</a>
+                <li class="navListItem">
+                    <a class="navLink" href="#">Registrarse</a>
+                </li>
+                <li class="navListItem">
+                    <a class="navLink login" href="#">Iniciar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="entrySection">
+            <h1 class="mainTitle">Explora la Pokédex <br> y descubre a todos los Pokémon</h1>
+            <h2 class="subTitle">¡Atrápalos a todos y conviértete en un maestro Pokémon!</h2>
+            <a class="registerButton" href="./pages/registro_entrenador.html">Regístrate como Entrenador</a>
+        </section>
+        <section class="searchMain aos-init aos-animate">
+            <h2 class="subTitle">¿Qué pokemon estas buscando?</h2>
+            <form class="searchPokemon">
+                <input class="searchInput" type="text" placeholder="Buscar..." id="buscar" name="buscar">
+                <input class="searchButton" type="submit" value="Buscar">
+            </form>
+        </section>
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    background-color: #181419;
+}
+
+header{
+    background-color: #9f3647;
+    min-height: 10%;
+}
+
+.navbar{
+    display: flex;
+    min-height: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 25%;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.logo svg{
+    padding-right: 0.5rem;
+}
+
+.navList{
+    width: auto;
+    margin: 0 0 0 auto;
+    list-style: none;
+}
+
+.navListItem{
+    display: inline;
+    padding-right: 3rem;
+}
+
+.login{
+    background-color: #181419;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.entrySection{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(to right top, #0000008a, #0000008a), url(images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 2rem;
+}
+
+.mainTitle{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.subTitle{
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.registerButton{
+    background-color: #9f3647;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+}
+
+/*hasta aca era el header*/
+
+.searchMain{
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searchPokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.searchInput{
+    border: 2px solid white;
+    border-radius: 25px;
+    color: #000000;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 20px 0px;
+    outline: none;
+    padding: 0px 20px;
+    width: 500px;
+}
+
+.searchButton{
+    background-color: #9f3647;
+    display: inline-block;
+    color: #ffffff;
+    height: 50px;
+    margin: 20px 10px;
+    padding: 0 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid white;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
