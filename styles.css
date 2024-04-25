@@ -10,16 +10,16 @@ body{
     background-color: #181419;
 }
 
-header{
+.header{
     background-color: #9f3647;
-    min-height: 10%;
 }
 
 .navbar{
+    height: 10vh;
     display: flex;
-    min-height: 10%;
     align-items: center;
     justify-content: space-between;
+    margin: auto auto;
 }
 
 .logo{
