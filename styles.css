@@ -7,11 +7,12 @@ body{
     font-family: sans-serif, Georgia, 'Times New Roman', Times, serif;
     color: white;
     font-size: 20px;
-    background-color: #181419;
+    background-color: white;
 }
 
 .header{
-    background-color: #9f3647;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
 }
 
 .navbar{
@@ -20,6 +21,11 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: auto auto;
+}
+
+.header>.navbar{
+    position: absolute;
+    width: 100%;
 }
 
 .logo{
@@ -67,7 +73,7 @@ a{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background: linear-gradient(to right top, #0000008a, #0000008a), url(images/banner-bg.jpg);
+    background: linear-gradient(to top, #000000, #aaa68c8a), url(images/banner-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +91,7 @@ a{
 }
 
 .registerButton{
-    background-color: #9f3647;
+    background-color: #3498DB;
     padding: 1rem 2rem;
     border-radius: 0.25rem;
     font-size: 1.5rem;
@@ -110,11 +116,13 @@ a{
 /*hasta aca era el header*/
 
 .searchMain{
-    margin: 2rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #000000;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5);
 }
 
 .searchPokemon{
@@ -137,9 +145,10 @@ a{
 }
 
 .pokemonListSection{
-    width: 80%;
-    margin: 2rem auto 2rem auto;
+    padding: 2rem 0;
     text-align: center;
+    background-color: #000000;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5);
 }
 
 .pokemonListContainer{
@@ -238,7 +247,7 @@ a{
 /* fin de los tipos */
 
 .button{
-    background-color: #9f3647;
+    background-color: #3498DB;
     display: inline-block;
     color: #ffffff;
     height: 50px;
@@ -251,12 +260,24 @@ a{
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     &:hover {
-        background-color: #9f3647;
+        background-color: #3498DB;
         transform: scale(0.95);
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);}
 }
 
 @media (max-width: 768px){
+    .entrySection{
+        padding-top: 2rem;
+    }
+
+    .entrySection>h1.mainTitle{
+        font-size: 2.9rem;
+    }
+
+    .entrySection>h2.subTitle{
+        font-size: 1.5rem;
+    }
+
     .searchMain>h2.subTitle{
         text-align: center;
     }
@@ -267,10 +288,6 @@ a{
 
     .searchInput{
         width: 100%;
-    }
-
-    .pokemonListSection{
-        width: 95%;
     }
 
     .pokemonListContainer{
@@ -286,7 +303,7 @@ a{
 /* footer */
 
 .footer{
-    background-color: #9f3647;
+    background-color: #3498DB;
     color: #ffffff;
     height: 30vh;
     display: flex;
@@ -304,6 +321,21 @@ a{
     text-align: center;
 }
 
+.footer>.navbar>.navList{
+    display: flex;
+    justify-content: center;
+    line-height: 1.5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer>.navbar>.navList>.navListItem{
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+
 
 a.navLink:hover{
     border-color: rgba(0, 0, 0, .1);
@@ -311,7 +343,7 @@ a.navLink:hover{
     background-color: rgba(255, 255, 255, .1);
 }
 
-.pokemonLink:hover{
+.pokemonLink:hover, .registerButton:hover{
     box-shadow: 0.25rem -0.25rem 0.85rem #9f3648cd;
     transform: scale(1.1);
     }
@@ -332,7 +364,7 @@ a.navLink:hover{
     .footer>nav>ul{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .footer>nav>ul>li{
