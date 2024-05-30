@@ -244,6 +244,57 @@ a{
     background-color: #6890f0;
 }
 
+.typeFlying{
+    background-color: #a890f0;
+}
+
+.typeBug{
+    background-color: #a8b820;
+}
+
+.typeNormal{
+    background-color: #a8a878;
+}
+
+.typeElectric{
+    background-color: #f8d030;
+}
+
+.typeGround{
+    background-color: #e0c068;
+}
+
+.typeFairy{
+    background-color: #ee99ac;
+}
+
+.typeFighting{
+    background-color: #c02038;
+}
+
+.typePsychic{
+    background-color: #f85888;
+}
+
+.typeRock{
+    background-color: #b8a038;
+}
+
+.typeSteel{
+    background-color: #b8b8d0;
+}
+
+.typeIce{
+    background-color: #98d8d8;
+}
+
+.typeGhost{
+    background-color: #705898;
+}
+
+.typeDragon{
+    background-color: #7038f8;
+}
 /* fin de los tipos */
 
 .button{

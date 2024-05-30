@@ -40,141 +40,13 @@
             </form>
         </section>
         <hr>
-        <section id="pokedex" class="pokemonListSection">
+        <section id="pokedex" class="pokemonListSection" data-page="">
             <h2 class="subTitle">Pokedex</h2>
             <div class="pokemonListContainer">
-                <div class="pokemonContainer">
-                    <a class="pokemonLink" href="#">
-                        <div class="pokemonImage">
-                            <img src="https://images.gameinfo.io/pokemon-trimmed/60/p1.webp" alt="bulbasaur">
-                        </div>
-                        <div class="pokemonInfo">
-                            <span>Bulbasaur</span>
-                            <div class="numberPokedex">001</div>
-                            <div class="types">
-                                <div class="typePlant one"><span>planta</span></div>
-                                <div class="typePoison one"><span>veneno</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pokemonContainer">
-                    <a class="pokemonLink" href="#">
-                        <div class="pokemonImage">
-                            <img src="https://images.gameinfo.io/pokemon-trimmed/60/p2.webp" alt="Ivysaur">
-                        </div>
-                        <div class="pokemonInfo">
-                            <span>Ivysaur</span>
-                            <div class="numberPokedex">002</div>
-                            <div class="types">
-                                <div class="typePlant one"><span>planta</span></div>
-                                <div class="typePoison one"><span>veneno</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pokemonContainer">
-                    <a class="pokemonLink" href="#">
-                        <div class="pokemonImage">
-                            <img src="https://images.gameinfo.io/pokemon-trimmed/60/p3.webp" alt="venusaur">
-                        </div>
-                        <div class="pokemonInfo">
-                            <span>Venusaur</span>
-                            <div class="numberPokedex">003</div>
-                            <div class="types">
-                                <div class="typePlant one"><span>planta</span></div>
-                                <div class="typePoison one"><span>veneno</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pokemonContainer">
-                    <a class="pokemonLink" href="#">
-                        <div class="pokemonImage">
-                            <img src="https://images.gameinfo.io/pokemon-trimmed/60/p4.webp" alt="charmander">
-                        </div>
-                        <div class="pokemonInfo">
-                            <span>Charmander</span>
-                            <div class="numberPokedex">004</div>
-                            <div class="types">
-                                <div class="typeFire one"><span>fuego</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pokemonContainer">
-                    <a class="pokemonLink" href="#">
-                        <div class="pokemonImage">
-                            <img src="https://images.gameinfo.io/pokemon-trimmed/60/p5.webp" alt="charmeleon">
-                        </div>
-                        <div class="pokemonInfo">
-                            <span>Charmeleon</span>
-                            <div class="numberPokedex">005</div>
-                            <div class="types">
-                                <div class="typeFire one"><span>fuego</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pokemonContainer">
-                    <a class="pokemonLink" href="#">
-                        <div class="pokemonImage">
-                            <img src="https://images.gameinfo.io/pokemon-trimmed/60/p6.webp" alt="charizard">
-                        </div>
-                        <div class="pokemonInfo">
-                            <span>Charizard</span>
-                            <div class="numberPokedex">006</div>
-                            <div class="types">
-                                <div class="typeFire one"><span>fuego</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pokemonContainer">
-                    <a class="pokemonLink" href="#">
-                        <div class="pokemonImage">
-                            <img src="https://images.gameinfo.io/pokemon-trimmed/60/p7.webp" alt="squirtle">
-                        </div>
-                        <div class="pokemonInfo">
-                            <span>Squirtle</span>
-                            <div class="numberPokedex">007</div>
-                            <div class="types">
-                                <div class="typeWater one"><span>agua</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pokemonContainer">
-                    <a class="pokemonLink" href="#">
-                        <div class="pokemonImage">
-                            <img src="https://images.gameinfo.io/pokemon-trimmed/60/p8.webp" alt="wartortle">
-                        </div>
-                        <div class="pokemonInfo">
-                            <span>Wartortle</span>
-                            <div class="numberPokedex">008</div>
-                            <div class="types">
-                                <div class="typeWater one"><span>agua</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pokemonContainer">
-                    <a class="pokemonLink" href="#">
-                        <div class="pokemonImage">
-                            <img src="https://images.gameinfo.io/pokemon-trimmed/60/p9.webp" alt="blastoise">
-                        </div>
-                        <div class="pokemonInfo">
-                            <span>Blastoise</span>
-                            <div class="numberPokedex">009</div>
-                            <div class="types">
-                                <div class="typeWater one"><span>agua</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                <!--aca comienza la lista de pokemon-->
             </div>
-            <button class="button" type="button">Anterior</button>
-            <button class="button" type="button">Siguiente</button>
+            <button class="button anterior" type="button">Anterior</button>
+            <button class="button posterior" type="button">Siguiente</button>
         </section>
     </main>
     <footer class="footer">
@@ -189,4 +61,5 @@
         <div class="footerText">Pokémon is Copyright Gamefreak, Nintendo and The Pokémon Company 2001-2024. All images and names owned and trademarked by Gamefreak, Nintendo, The Pokémon Company, and Niantic are property of their respective owners.</div>
     </footer>
 </body>
+<script src="fetch_pokeapi.js"></script>
 </html>
