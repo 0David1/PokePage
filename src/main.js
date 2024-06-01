@@ -9,10 +9,10 @@ import './assets/global.css';
 
 // Define las rutas
 const routes = [
-  { path: '/', component: HomePage },
+  { path: '/|(PokePage)', component: HomePage },
   { path: '/register', component: RegisterPage},
   { path: '/login', component: LoginPage },
-  { path: '/pokedex', component: PokedexPage},
+  { path: '/pokedex', component: PokedexPage}
 ];
 
 // Crea el enrutador
