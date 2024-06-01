@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div id="app">
+    <header class="header">
+      <nav class="navbar">
+        <router-link class="logo" to="/">
+          <svg xmlns="http://www.w3.org/2000/svg" focusable="true" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <circle cx="9" cy="9" r="9" transform="translate(3 3)" /> <circle cx="12" cy="12" r="3" /> <path d="M3 12h6m6 0h6" /> </svg>
+          <span>PokeLegends</span>
+        </router-link>
+        <ul class="navList">
+          <li class="navListItem">
+            <router-link class="navLink" to="/pokedex">Pokedex</router-link>
+          </li>
+          <li class="navListItem">
+            <router-link class="navLink" to="/register">Registrarse</router-link>
+          </li>
+          <li class="navListItem">
+            <router-link class="navLink login" to="/login">Iniciar Sesión</router-link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <router-view></router-view>
+    </main>
+    <footer class="footer">
+      <nav class="navbar">
+        <ul class="navList">
+          <li class="navListItem"><a class="navLink" href="">Términos y condiciones</a></li>
+          <li class="navListItem"><a class="navLink" href="">Preguntas frecuentes</a></li>
+          <li class="navListItem"><a class="navLink" href="">Ayuda</a></li>
+          <li class="navListItem"><a class="navLink" href="">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footerText">Pokémon is Copyright Gamefreak, Nintendo and The Pokémon Company 2001-2024. All images and names owned and trademarked by Gamefreak, Nintendo, The Pokémon Company, and Niantic are property of their respective owners.</div>
+    </footer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
