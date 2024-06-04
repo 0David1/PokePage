@@ -13,6 +13,9 @@ module.exports = {
     config
       .plugin('copy')
       .tap(args => {
+        if (!Array.isArray(args[0])) {
+          args[0] = [];
+        }
         args[0].push({
           from: path.resolve(__dirname, '_redirects'),
           to: path.resolve(__dirname, 'dist'),
