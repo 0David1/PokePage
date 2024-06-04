@@ -4,10 +4,10 @@
         <img src="https://images.gameinfo.io/pokemon-trimmed/60/p25.webp">
         <h1 class="registerTitle">Registrarse</h1>
         <form action="#">
-            <input class="registerUser" type="text" placeholder="Usuario" required>
-            <input class="registerEmail" type="email" placeholder="Correo electrónico" required>
-            <input class="registerPassword" type="password" placeholder="Contraseña" required>
-            <input class="registerConfirmPassword" type="password" placeholder="Confirmar contraseña" required>
+            <input class="registerUser" type="text" placeholder="Usuario" required autocomplete="username">
+            <input class="registerEmail" type="email" placeholder="Correo electrónico" required autocomplete="username">
+            <input class="registerPassword" type="password" placeholder="Contraseña" required autocomplete="new-password">
+            <input class="registerConfirmPassword" type="password" placeholder="Confirmar contraseña" required autocomplete="new-password">
             <input class="registerSubmit" type="submit" value="Registrarse">
         </form>
         <div class="login-link">

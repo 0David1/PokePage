@@ -4,8 +4,8 @@
             <img src="https://images.gameinfo.io/pokemon-trimmed/60/p25.webp">
             <h1 class="loginTitle">Iniciar Sesión</h1>
             <form action="#">
-                <input class="loginUser" type="text" placeholder="Usuario" required>
-                <input class="loginPassword" type="password" placeholder="Contraseña" required>
+                <input class="loginUser" type="text" placeholder="Usuario" required autocomplete="username">
+                <input class="loginPassword" type="password" placeholder="Contraseña" required autocomplete="current-password">
                 <input class="loginSubmit" type="submit" value="Iniciar Sesión">
             </form>
             <div class="signup-link">
@@ -34,7 +34,7 @@ export default {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 3rem;
-  height: 300px;
+  height: auto;
   width: 50%;
   background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente */
   backdrop-filter: blur(8px); /* Aplicar efecto de desenfoque */
@@ -82,5 +82,11 @@ export default {
 
 .signup-link a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 80%;
+    }
 }
 </style>
