@@ -7,7 +7,7 @@
         </div>
         <div class="pokemonListContainer" data-page="" ref="pokemonListContainer">
             <div v-for="pokemon in pokemonList" :key="pokemon.id" class="pokemonContainer">
-                <a class="pokemonLink" href="#">
+                <a class="pokemonLink">
                     <div class="pokemonImage">
                         <img :src="pokemon.image" :alt="pokemon.name" loading="lazy">
                     </div>
