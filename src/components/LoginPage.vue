@@ -9,7 +9,7 @@
                 <input class="loginSubmit" type="submit" value="Iniciar Sesión">
             </form>
             <div class="signup-link">
-                ¿No tienes una cuenta? <router-link to="/register">Regístrate aquí</router-link>
+                ¿No tienes una cuenta? <router-link to="register">Regístrate aquí</router-link>
             </div>
         </div>
     </section>

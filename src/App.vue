@@ -8,18 +8,18 @@
         </router-link>
         <ul class="navListForCel">
           <li class="navListItem">
-            <router-link class="navLink" to="/pokedex">Pokedex</router-link>
+            <router-link class="navLink" to="pokedex">Pokedex</router-link>
           </li>
         </ul>
         <ul class="navList">
           <li class="navListItem">
-            <router-link class="navLink" to="/pokedex">Pokedex</router-link>
+            <router-link class="navLink" to="pokedex">Pokedex</router-link>
           </li>
           <li class="navListItem">
-            <router-link class="navLink" to="/register">Registrarse</router-link>
+            <router-link class="navLink" to="register">Registrarse</router-link>
           </li>
           <li class="navListItem">
-            <router-link class="navLink login" to="/login">Iniciar Sesión</router-link>
+            <router-link class="navLink login" to="login">Iniciar Sesión</router-link>
           </li>
         </ul>
       </nav>
@@ -30,10 +30,10 @@
     <footer class="footer">
       <nav class="navbar">
         <ul class="navList">
-          <li class="navListItem"><router-link class="navLink" to="/PokePage">Términos y condiciones</router-link></li>
-          <li class="navListItem"><router-link class="navLink" to="/PokePage">Preguntas frecuentes</router-link></li>
-          <li class="navListItem"><router-link class="navLink" to="/PokePage">Ayuda</router-link></li>
-          <li class="navListItem"><router-link class="navLink" to="/PokePage">Contacto</router-link></li>
+          <li class="navListItem"><router-link class="navLink" to="PokePage">Términos y condiciones</router-link></li>
+          <li class="navListItem"><router-link class="navLink" to="PokePage">Preguntas frecuentes</router-link></li>
+          <li class="navListItem"><router-link class="navLink" to="PokePage">Ayuda</router-link></li>
+          <li class="navListItem"><router-link class="navLink" to="PokePage">Contacto</router-link></li>
         </ul>
       </nav>
       <div class="footerText">Pokémon is Copyright Gamefreak, Nintendo and The Pokémon Company 2001-2024. All images and names owned and trademarked by Gamefreak, Nintendo, The Pokémon Company, and Niantic are property of their respective owners.</div>

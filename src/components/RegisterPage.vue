@@ -11,7 +11,7 @@
             <input class="registerSubmit" type="submit" value="Registrarse">
         </form>
         <div class="login-link">
-            ¿Ya tienes una cuenta? <router-link to="/login">Inicia sesión aquí</router-link>
+            ¿Ya tienes una cuenta? <router-link to="login">Inicia sesión aquí</router-link>
         </div>
     </div>
 </section>
